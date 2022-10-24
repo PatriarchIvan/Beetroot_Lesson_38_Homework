@@ -1,4 +1,4 @@
-@import 'reset','slider__hero';
+@import 'reset','slider__hero','slider__shop';
 @import url(https://fonts.googleapis.com/css?family=Montserrat:500,600,700);
 
 body {
@@ -66,5 +66,6 @@ body {
         font-weight: 500;
         text-align: center;
         text-transform: uppercase;
+        margin-bottom: 50px;
     }
 }
