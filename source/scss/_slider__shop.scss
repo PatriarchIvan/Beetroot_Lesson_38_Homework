@@ -1,11 +1,55 @@
 .slider__shop {
+    width: 100%;
+    margin: 0 auto;
     max-width: 1200px;
-    height: 300px;
+    height: 100%;
+
+    & .swiper-slide {
+        border: 1px solid transparent;
+
+        &:hover {
+            border: 1px solid #F16A50;
+            // scale: 1.05;
+        }
+    }
+
+    .status {
+        font-weight: 500;
+        font-size: 10px;
+        text-transform: uppercase;
+        padding: 4px 6px;
+        text-align: center;
+        color: #000;
+
+        &.stock {
+            background: #F16A50;
+            color: #F8F1EA;
+        }
+
+        &.sold {
+            font-weight: 700;
+        }
+    }
 
     .title {
         font-size: 16px;
         font-weight: 600;
+        text-align: center;
+        margin-bottom: 10px;
     }
-  }
 
-  
+    .price {
+        text-align: center;
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+
+    &.btn {
+        margin: 50px auto 70px auto;
+        width: 230px;
+        background: transparent;
+        border: 2px solid #F8F1EA;
+        text-transform: uppercase;
+    }
+}
