@@ -3,13 +3,21 @@
     margin: 0 auto;
     max-width: 1200px;
     height: 100%;
+    z-index: 1;
+
+    .swiper-wrapper {
+        position: relative;
+        z-index: 1;
+    }
 
     & .swiper-slide {
         border: 1px solid transparent;
+        z-index: 1;
+        transition: all 0.2s ease;
 
         &:hover {
             border: 1px solid #F16A50;
-            // scale: 1.05;
+            cursor: pointer;    
         }
     }
 
@@ -44,12 +52,31 @@
         font-size: 24px;
     }
 
-
     &.btn {
+        display: flex;
+        justify-content: center;
         margin: 50px auto 70px auto;
         width: 230px;
         background: transparent;
-        border: 2px solid #F8F1EA;
+        padding: 15px 60px;
+        border: 2px solid #000;
         text-transform: uppercase;
+        transition: all 0.2s ease;
+
+        &:hover {
+            border: 2px solid transparent;
+            background: #F16A50;
+            color: #fff;
+        }
     }
+}
+
+.swiper-button-prev ,
+.swiper-button-next {
+    background-image: url("../source/img/slider__shop/left__arr.png");
+    right:10px;
+    padding: 30px;
+    color: #000 !important;
+    fill: black !important;
+    stroke: black !important;
 }

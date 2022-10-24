@@ -156,12 +156,22 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   max-width: 1200px;
   height: 100%;
+  z-index: 1;
+}
+.slider__shop .swiper-wrapper {
+  position: relative;
+  z-index: 1;
 }
 .slider__shop .swiper-slide {
   border: 1px solid transparent;
+  z-index: 1;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .slider__shop .swiper-slide:hover {
   border: 1px solid #F16A50;
+  cursor: pointer;
 }
 .slider__shop .status {
   font-weight: 500;
@@ -190,11 +200,36 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
 }
 .slider__shop.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 50px auto 70px auto;
   width: 230px;
   background: transparent;
-  border: 2px solid #F8F1EA;
+  padding: 15px 60px;
+  border: 2px solid #000;
   text-transform: uppercase;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.slider__shop.btn:hover {
+  border: 2px solid transparent;
+  background: #F16A50;
+  color: #fff;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background-image: url("../source/img/slider__shop/left__arr.png");
+  right: 10px;
+  padding: 30px;
+  color: #000 !important;
+  fill: black !important;
+  stroke: black !important;
 }
 
 body {

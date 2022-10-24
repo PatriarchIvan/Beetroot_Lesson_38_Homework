@@ -10,22 +10,36 @@ $(document).ready(function () {
 });
 
 const swiper = new Swiper('.swiper', {
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
   slidesPerView: 5,
   spaceBetween: 10,
   loop: true,
-  // If we need pagination
+  autoplay: {
+    delay: 2000,
+    autoplay: true,
+  }, 
   pagination: {
     el: '.swiper-pagination',
   },
-
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    480: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    640: {
+      slidesPerView: 5,
+      spaceBetween: 40
+    }
+  }
 });
