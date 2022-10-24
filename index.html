@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
     <title>OnWave</title>
 </head>
@@ -60,18 +61,47 @@
             </div>
         </div>
         <h2 class="new__title">New Arrivals</h2>
-        <div class="slider__shop">
-            <div class="slider__shop-slide">
-                <span class="status">in stock</span>
-                <img src="./source/img/slider__shop/slide__1.png" alt="" class="picture">
-                <h3 class="title">Hagstrom Alvar Limited Edition</h3>
-                <h3 class="price">€2.990,00</h3>
+        <div class="slider__shop swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <span class="status stock">in stock</span>
+                    <img src="./source/img/slider__shop/slide__1.png" alt="" class="picture">
+                    <h3 class="title">Hagstrom Alvar Limited Edition</h3>
+                    <h3 class="price">€2.990,00</h3>
+                </div>
+                <div class="swiper-slide">
+                    <span class="status stock">in stock</span>
+                    <img src="./source/img/slider__shop/slide__2.png" alt="" class="picture">
+                    <h3 class="title">Hagstrom Tremar Viking Deluxe Cloudy Seas</h3>
+                    <h3 class="price">€1.300,00</h3>
+                </div>
+                <div class="swiper-slide">
+                    <span class="status sold">sold</span>
+                    <img src="./source/img/slider__shop/slide_3.png" alt="" class="picture">
+                    <h3 class="title">Gibson Les Paul Standard 60s</h3>
+                    <h3 class="price">€3.749,00</h3>
+                </div>
+                <div class="swiper-slide">
+                    <span class="status stock">in stock</span>
+                    <img src="./source/img/slider__shop/slide_4.png" alt="" class="picture">
+                    <h3 class="title">Suhr Standard Plus Trans Blue Denim</h3>
+                    <h3 class="price">€3.449,00</h3>
+                </div>
+                <div class="swiper-slide">
+                    <span class="status stock">in stock</span>
+                    <img src="./source/img/slider__shop/slide_5.png" alt="" class="picture">
+                    <h3 class="title">Fender Telecaster Black Paisley Limited Edition</h3>
+                    <h3 class="price">€1.499,00</h3>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </div>
     </main>
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./source/js/slider.js"></script>
     <script src="./source/js/script.js"></script>
 </body>

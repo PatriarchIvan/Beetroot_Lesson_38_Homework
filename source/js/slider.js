@@ -9,13 +9,23 @@ $(document).ready(function(){
     });
   });
 
-  $(document).ready(function(){
-    $('.slider__shop').slick({
-        arrows: false,
-        dots : false,
-        slidesToShow: 5,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        speed: 1000,
-    });
+  const swiper = new Swiper('.swiper', {
+    slidesPerView: 5,
+  spaceBetween: 10,
+    loop: true,
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
   });
