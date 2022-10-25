@@ -18,12 +18,12 @@ const swiper = new Swiper('.swiper', {
   spaceBetween: 10,
   loop: true,
   autoplay: {
-    delay: 2000,
+    delay: 2500,
     autoplay: true,
   }, 
-  pagination: {
-    el: '.swiper-pagination',
-  },
+  // pagination: {
+  //   el: '.swiper-pagination',
+  // },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',

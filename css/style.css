@@ -177,8 +177,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   font-size: 10px;
   text-transform: uppercase;
-  padding: 4px 6px;
-  text-align: center;
+  padding: 15px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
   color: #000;
 }
 .slider__shop .status.stock {
@@ -220,16 +223,6 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid transparent;
   background: #F16A50;
   color: #fff;
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  background-image: url("../source/img/slider__shop/left__arr.png");
-  right: 10px;
-  padding: 30px;
-  color: #000 !important;
-  fill: black !important;
-  stroke: black !important;
 }
 
 body {
