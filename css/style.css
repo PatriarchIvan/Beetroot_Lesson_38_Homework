@@ -152,8 +152,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .slider__shop {
-  width: 100%;
-  margin: 0 auto;
   max-width: 1200px;
   height: 100%;
   z-index: 1;
@@ -165,24 +163,42 @@ h1, h2, h3, h4, h5, h6 {
 .slider__shop .swiper-slide {
   border: 1px solid transparent;
   z-index: 1;
-  -webkit-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.slider__shop .swiper-slide .picture {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 .slider__shop .swiper-slide:hover {
   border: 1px solid #F16A50;
   cursor: pointer;
 }
+.slider__shop .swiper-slide:hover .picture {
+  -webkit-transform: translateY(12%) scale3d(1, 1.2, 1);
+          transform: translateY(12%) scale3d(1, 1.2, 1);
+}
 .slider__shop .status {
-  font-weight: 500;
-  font-size: 10px;
-  text-transform: uppercase;
-  padding: 15px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 40%;
+  width: 30%;
+  padding: 4px 4px;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
   color: #000;
+}
+@media (max-width: 1120px) {
+  .slider__shop .status {
+    width: 40%;
+  }
 }
 .slider__shop .status.stock {
   background: #F16A50;
@@ -223,6 +239,13 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid transparent;
   background: #F16A50;
   color: #fff;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background-image: url("../source/img/slider__shop/left_arr.png");
+  position: absolute;
+  top: 135%;
 }
 
 body {
@@ -280,7 +303,7 @@ body {
   color: #000;
 }
 
-.main .new__title {
+.main .shop__title {
   font-size: 32px;
   font-weight: 500;
   text-align: center;

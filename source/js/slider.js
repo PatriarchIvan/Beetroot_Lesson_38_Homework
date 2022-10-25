@@ -17,29 +17,30 @@ const swiper = new Swiper('.swiper', {
   slidesPerView: 5,
   spaceBetween: 10,
   loop: true,
-  autoplay: {
-    delay: 2500,
-    autoplay: true,
-  }, 
+  // autoplay: {
+  //   delay: 3000,
+  //   autoplay: true,
+  // }, 
   // pagination: {
   //   el: '.swiper-pagination',
   // },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    // nextEl: '.swiper-button-next',
+    // prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next-unique',
+    prevEl: '.swiper-button-prev-unique'
   },
   breakpoints: {
     320: {
       slidesPerView: 1,
+    },
+    321: {
+      slidesPerView: 3,
       spaceBetween: 20
     },
-    480: {
-      slidesPerView: 3,
-      spaceBetween: 30
-    },
-    640: {
+    920: {
       slidesPerView: 5,
-      spaceBetween: 40
+      spaceBetween: 10
     }
   }
 });
