@@ -313,9 +313,9 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
 }
 .partners.swiper .swiper-slide:hover .picture {
-  -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .swiper-button-prev-unique-part,
@@ -346,10 +346,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .swiper-button-next-unique-part {
   position: absolute;
-  left: 90%;
+  left: 91%;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
-  z-index: 2;
 }
 .swiper-button-next-unique-part:hover {
   -webkit-transform: rotateY(0deg);
@@ -413,6 +412,7 @@ body {
 
 .main .shop {
   position: relative;
+  background: #F8F1EA;
 }
 .main .shop__title,
 .main .partners__title {
@@ -423,6 +423,57 @@ body {
   margin-bottom: 50px;
 }
 .main .partners {
+  background: #F8F1EA;
   position: relative;
   margin-bottom: 70px;
+}
+
+.footer {
+  background: #35312D;
+  padding: 35px 0 40px 0;
+}
+.footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 70px 0 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.footer__nav {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+.footer__nav__logo {
+  margin-bottom: 35px;
+}
+.footer__nav__menu .nav____link {
+  color: #F8F1EA;
+  font-size: 20px;
+  font-weight: 500;
+}
+.footer__nav__menu .nav____link:hover {
+  color: #F16A50;
+}
+.footer__contacts {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+.footer__contacts .contacts__text,
+.footer__contacts .contacts__tel {
+  font-weight: 500;
+  color: #F8F1EA;
+  font-size: 26px;
+  margin-bottom: 35px;
+}
+.footer .footer__copy {
+  padding-top: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #F8F1EA;
 }

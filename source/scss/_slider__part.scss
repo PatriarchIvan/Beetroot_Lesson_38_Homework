@@ -5,10 +5,6 @@
 
     & .swiper-slide {
         transition: all 0.4s ease;
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
-        // width: 10%;
 
         & .picture {
             object-fit: cover;
@@ -22,7 +18,7 @@
             cursor: pointer;
 
             & .picture {
-                transform: scale(1.2);
+                transform: scale(1.1);
             }
         }
     }
@@ -57,9 +53,8 @@
 
 .swiper-button-next-unique-part {
     position: absolute;
-    left: 90%;
+    left: 91%;
     transform: rotateY(180deg);
-    z-index: 2;
     &:hover {
         transform: rotateY(0deg);
     }

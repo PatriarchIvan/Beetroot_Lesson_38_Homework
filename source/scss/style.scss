@@ -64,6 +64,7 @@ body {
 
     .shop {
         position: relative;
+        background: #F8F1EA;
     }
 
     .shop__title,
@@ -76,9 +77,60 @@ body {
     }
 
     .partners {
+        background: #F8F1EA;
         position: relative;
         margin-bottom: 70px;
     }
+}
 
+.footer {
+    background: #35312D;
+    padding: 35px 0 40px 0;
 
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 70px 0 0;
+        justify-content: center;
+    }
+
+    &__nav {
+        flex-basis: 50%;
+
+        &__logo {
+            margin-bottom: 35px;
+        }
+
+        &__menu {
+                & .nav____link {
+                    color: #F8F1EA;
+                    font-size: 20px;
+                    font-weight: 500;
+
+                    &:hover {
+                        color: #F16A50;
+                    }
+                }
+        }
+
+    }
+
+    &__contacts {
+        flex-basis: 50%;
+        .contacts__text,
+        .contacts__tel {
+            font-weight: 500;
+            color: #F8F1EA;
+            font-size: 26px;
+            margin-bottom: 35px;
+        }
+    }
+    .footer__copy {
+        padding-top: 30px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #F8F1EA;
+    }
 }

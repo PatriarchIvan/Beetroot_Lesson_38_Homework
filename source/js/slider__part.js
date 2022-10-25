@@ -3,7 +3,10 @@ const swiperPart = new Swiper('.partners.swiper', {
     spaceBetween: 20,
     loop: true,
     autoplay: {
-        speed: 500,
+        delay: 1500,
+        disableOnInteraction: true, 
+        pauseOnMouseEnter: true,
+        waitForTransition: true,
     },
     keyboard: {
         enabled: true,
