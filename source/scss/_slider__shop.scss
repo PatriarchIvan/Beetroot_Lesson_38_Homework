@@ -93,12 +93,19 @@
     width: 45px;
     height: 80px;
     z-index: 2;
-    // transition: background-image 0.1s ease;
     
     &:hover {
         background-image: url("../source/img/slider__shop/right__arr.png");
         transform: rotateY(-180deg);
         cursor: pointer;
+    }
+
+    @media (max-width: 1400px) {
+        left: 2%;
+    }
+
+    @media (max-width: 1170px) {
+        opacity: 0;
     }
 }
 
@@ -109,5 +116,9 @@
     z-index: 2;
     &:hover {
         transform: rotateY(0deg);
+    }
+
+    @media (max-width: 1400px) {
+        left: 96%;
     }
 }

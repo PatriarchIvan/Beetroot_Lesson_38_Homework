@@ -259,6 +259,18 @@ h1, h2, h3, h4, h5, h6 {
           transform: rotateY(-180deg);
   cursor: pointer;
 }
+@media (max-width: 1400px) {
+  .swiper-button-prev-unique,
+.swiper-button-next-unique {
+    left: 2%;
+  }
+}
+@media (max-width: 1170px) {
+  .swiper-button-prev-unique,
+.swiper-button-next-unique {
+    opacity: 0;
+  }
+}
 
 .swiper-button-next-unique {
   position: absolute;
@@ -270,6 +282,11 @@ h1, h2, h3, h4, h5, h6 {
 .swiper-button-next-unique:hover {
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg);
+}
+@media (max-width: 1400px) {
+  .swiper-button-next-unique {
+    left: 96%;
+  }
 }
 
 body {
