@@ -248,8 +248,8 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   left: 5%;
   top: 33%;
-  width: 45px;
-  height: 80px;
+  width: 40px;
+  height: 72px;
   z-index: 2;
 }
 .swiper-button-prev-unique:hover,
@@ -287,6 +287,73 @@ h1, h2, h3, h4, h5, h6 {
   .swiper-button-next-unique {
     left: 96%;
   }
+}
+
+.partners.swiper {
+  max-width: 1200px;
+  margin: 0 auto;
+  max-height: 100px;
+}
+.partners.swiper .swiper-slide {
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.partners.swiper .swiper-slide .picture {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100px;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.partners.swiper .swiper-slide:hover {
+  cursor: pointer;
+}
+.partners.swiper .swiper-slide:hover .picture {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.swiper-button-prev-unique-part,
+.swiper-button-next-unique-part {
+  background-image: url("../source/img/slider__shop/left__arr.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  width: 40px;
+  height: 72px;
+  z-index: 2;
+}
+.swiper-button-prev-unique-part:hover,
+.swiper-button-next-unique-part:hover {
+  background-image: url("../source/img/slider__shop/right__arr.png");
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  cursor: pointer;
+}
+@media (max-width: 1170px) {
+  .swiper-button-prev-unique-part,
+.swiper-button-next-unique-part {
+    opacity: 0;
+  }
+}
+
+.swiper-button-next-unique-part {
+  position: absolute;
+  left: 90%;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  z-index: 2;
+}
+.swiper-button-next-unique-part:hover {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
 }
 
 body {
@@ -347,10 +414,15 @@ body {
 .main .shop {
   position: relative;
 }
-.main .shop__title {
+.main .shop__title,
+.main .partners__title {
   font-size: 32px;
   font-weight: 500;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 50px;
+}
+.main .partners {
+  position: relative;
+  margin-bottom: 70px;
 }

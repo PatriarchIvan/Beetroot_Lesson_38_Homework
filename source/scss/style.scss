@@ -1,4 +1,4 @@
-@import 'reset', 'slider__hero', 'slider__shop';
+@import 'reset', 'slider__hero', 'slider__shop', 'slider__part';
 @import url(https://fonts.googleapis.com/css?family=Montserrat:500,600,700);
 
 body {
@@ -65,12 +65,19 @@ body {
     .shop {
         position: relative;
     }
-    .shop__title {
+
+    .shop__title,
+    .partners__title {
         font-size: 32px;
         font-weight: 500;
         text-align: center;
         text-transform: uppercase;
         margin-bottom: 50px;
+    }
+
+    .partners {
+        position: relative;
+        margin-bottom: 70px;
     }
 
 
