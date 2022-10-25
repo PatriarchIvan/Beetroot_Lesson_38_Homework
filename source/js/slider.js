@@ -10,20 +10,14 @@ $(document).ready(function () {
 });
 
 const swiper = new Swiper('.swiper', {
+  slidesPerView: 5,
+  spaceBetween: 10,
+  loop: true,
+  autoplay: false,
   keyboard: {
     enabled: true,
     onlyInViewport: false,
   },
-  slidesPerView: 5,
-  spaceBetween: 10,
-  loop: true,
-  // autoplay: {
-  //   delay: 3000,
-  //   autoplay: true,
-  // }, 
-  // pagination: {
-  //   el: '.swiper-pagination',
-  // },
   navigation: {
     // nextEl: '.swiper-button-next',
     // prevEl: '.swiper-button-prev',
@@ -36,11 +30,16 @@ const swiper = new Swiper('.swiper', {
     },
     321: {
       slidesPerView: 3,
-      spaceBetween: 20
+      spaceBetween: 20,
+      // autoplay: {
+      //   autoplay: true,
+      //   delay: 3000,
+      // },
     },
     920: {
       slidesPerView: 5,
-      spaceBetween: 10
+      spaceBetween: 10,
+    
     }
   }
 });
