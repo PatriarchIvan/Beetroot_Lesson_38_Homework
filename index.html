@@ -44,7 +44,13 @@
                         <h2 class="slide__content content__header">Find your own style</h2>
                         <button class="slide__content content__btn">View More</button>
                     </div>
-                    <img src="./source/img/slider__hero/slide__1.png" alt="" class="slide__img">
+                    <picture>
+                        <source srcset="./source/img/slider__hero/slide__1.png" media="(max-width: 1280px)"/>
+                        <source srcset="./source/img/slider__hero/slide__1_md.png" media="(max-width: 768px)"/>
+                        <source srcset="./source/img/slider__hero/slide__1_sm.png" media="(max-width: 320px)"/>
+                        <img src="./source/img/slider__hero/slide__1.png" alt=""/ class="slide__img">
+                      </picture>
+                    <!-- <img src="./source/img/slider__hero/slide__1.png" alt="" class="slide__img"> -->
                 </div>
                 <div class="slider__hero-slide">
                     <div class="slide__content">
