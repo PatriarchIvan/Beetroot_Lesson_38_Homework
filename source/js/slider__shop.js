@@ -1,3 +1,4 @@
+const menuS = ['', '', '']
 const swiper = new Swiper('.slider__shop', {
     slidesPerView: 5,
     spaceBetween: 10,
@@ -15,15 +16,26 @@ const swiper = new Swiper('.slider__shop', {
         nextEl: '.swiper-button-next-unique',
         prevEl: '.swiper-button-prev-unique',
     },
+
     breakpoints: {
         320: {
             slidesPerView: 1,
+            navigation: {
+                enabled: false,
+            },
         },
-        321: {
+        421: {
             slidesPerView: 3,
-            spaceBetween: 20,
         },
-        920: {
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+        },
+        769: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+        },
+        1170: {
             slidesPerView: 5,
             spaceBetween: 10,
         }

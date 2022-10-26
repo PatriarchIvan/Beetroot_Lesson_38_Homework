@@ -53,6 +53,13 @@
                  right: 110px;
                  top: 220px;
                 }
+
+                @media (max-width:420px) {
+                    right: 130px;
+                    top: 220px;
+                    width: 200px;
+                    height: 40px;
+                   }
             }
 
         }

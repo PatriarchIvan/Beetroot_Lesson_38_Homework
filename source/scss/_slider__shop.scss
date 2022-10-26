@@ -1,6 +1,25 @@
 .slider__shop {
     max-width: 1280px;
     z-index: 1;
+    @media (max-width: 1280px) {
+        max-width: 1070px;
+    }
+
+    @media (max-width: 1070px) {
+        max-width: 768px;
+    }
+
+    @media (max-width: 768px) {
+        max-width: 600px;
+    }
+    
+    @media (max-width: 600px) {
+        max-width: 420px;
+    }
+
+    @media (max-width: 420px) {
+        max-width: 320px;
+    }
 
     .swiper-wrapper {
         position: relative;
@@ -23,7 +42,7 @@
             border: 1px solid #F16A50;
             cursor: pointer; 
             & .picture {
-                transform: translateY(12%) scale3d(1, 1.145, 1);
+                transform: translateY(12%) scale3d(1, 1.2, 1);
             }
         }
     }
@@ -37,13 +56,19 @@
         text-transform: uppercase;
         color: #000;
 
-        @media (max-width: 1120px) {
+        @media (max-width: 1070px) {
             width: 40%;
         }
 
         &.stock {
             background: #F16A50;
             color: #F8F1EA;
+            @media (max-width: 768px) {
+                width: 50%;
+            }
+            @media (max-width: 420px) {
+                width: 60%;
+            }
         }
 
         &.sold {
@@ -62,6 +87,7 @@
         text-align: center;
         font-weight: 700;
         font-size: 24px;
+        padding: 10px;
     }
 
     &.btn {
@@ -85,37 +111,47 @@
 }
 .swiper-button-prev-unique,
 .swiper-button-next-unique {
-    background-image: url("../source/img/slider__shop/left__arr.png");
+    background-image: url("../source/img/slider__shop/left__arr.svg");
     background-position: center center;
     background-repeat: no-repeat;
     position: absolute;
-    left: 5%;
+    left: 1%;
     top: 33%;
     width: 40px;
     height: 72px;
     z-index: 2;
-    
+
+    @media (max-width: 1070px) {
+        height: 30px;
+    }
+
+    @media (max-width: 768px) {
+        left: 5%;
+    }
     &:hover {
-        background-image: url("../source/img/slider__shop/right__arr.png");
+        background-image: url("../source/img/slider__shop/right__arr.svg");
         transform: rotateY(-180deg) scale(1.2);
         cursor: pointer;
     }
 
-    @media (max-width: 1400px) {
-        left: 2%;
-    }
-
-    @media (max-width: 1170px) {
-        opacity: 0;
-    }
+   
 }
 
 .swiper-button-next-unique {
     position: absolute;
-    left: 92%;
+    left: 94%;
     transform: rotateY(180deg);
     z-index: 2;
     &:hover {
         transform: rotateY(0deg) scale(1.2);
     }
+
+    @media (max-width: 768px) {
+        left: 90%;
+    }
+
+    @media (max-width: 600px) {
+        left: 85%;
+    }
+    
 }

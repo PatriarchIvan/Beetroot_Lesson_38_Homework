@@ -28,7 +28,6 @@ const swiperPart = new Swiper('.partners.swiper', {
     },
 
     breakpoints: {
-        // when window width is >= 320px
         320: {
             slidesPerView: 3,
             slidesPerGroup: 3,
@@ -36,12 +35,10 @@ const swiperPart = new Swiper('.partners.swiper', {
                 enabled: true,
             }
         },
-        // when window width is >= 640px
-        640: {
+        600: {
             slidesPerView: 5,
             spaceBetween: 20,
         },
-        // when window width is >= 920px
         920: {
             slidesPerView: 9,
             spaceBetween: 40,
