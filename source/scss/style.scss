@@ -20,6 +20,7 @@ body {
         width: 36px;
         height: 36px;
         margin: 0 15px;
+        transition: transform 0.2s ease-in-out;
 
         &_search {
             background: url("../source/img/header/search__icon.png");
@@ -31,6 +32,10 @@ body {
             background: url("../source/img/header/profile__icon.png");
             background-repeat: no-repeat;
             background-size: cover;
+        }
+
+        &:hover {
+            transform: scale(1.2);
         }
     }
 
@@ -79,7 +84,7 @@ body {
     .partners {
         background: #F8F1EA;
         position: relative;
-        margin-bottom: 70px;
+        padding-bottom: 70px;
     }
 }
 
@@ -104,21 +109,24 @@ body {
         }
 
         &__menu {
-                & .nav____link {
-                    color: #F8F1EA;
-                    font-size: 20px;
-                    font-weight: 500;
+            & .nav____link {
+                color: #F8F1EA;
+                font-size: 20px;
+                font-weight: 500;
 
-                    &:hover {
-                        color: #F16A50;
-                    }
+                &:hover {
+                    color: #F16A50;
                 }
+            }
         }
 
     }
 
     &__contacts {
         flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+
         .contacts__text,
         .contacts__tel {
             font-weight: 500;
@@ -126,7 +134,33 @@ body {
             font-size: 26px;
             margin-bottom: 35px;
         }
+
+        .contacts__socials {
+            max-width: 325px;
+            max-height: 40px;
+            margin-bottom: 35px;
+            display: flex;
+            gap: 10px;
+
+            & .svg {
+                width: 30px;
+                height: 30px;
+                transition: all 0.3s ease;
+                stroke: #F8F1EA;
+
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.2);
+                    stroke: #F16A50;
+                }
+
+                &:last-of-type {
+                    width: 40px;
+                }
+            }
+        }
     }
+
     .footer__copy {
         padding-top: 30px;
         font-size: 14px;

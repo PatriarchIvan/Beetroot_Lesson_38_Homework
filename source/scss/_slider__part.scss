@@ -2,6 +2,7 @@
     max-width: 1200px;
     margin: 0 auto;
     max-height: 100px;
+    position: relative;
 
     & .swiper-slide {
         transition: all 0.4s ease;
@@ -31,11 +32,11 @@
     background-repeat: no-repeat;
     position: absolute;
     left: 5%;
-    top: 50%;
+    top: 28%;
     width: 40px;
     height: 72px;
     z-index: 2;
-    
+
     &:hover {
         background-image: url("../source/img/slider__shop/right__arr.png");
         transform: rotateY(-180deg);
@@ -55,6 +56,7 @@
     position: absolute;
     left: 91%;
     transform: rotateY(180deg);
+
     &:hover {
         transform: rotateY(0deg);
     }
@@ -62,4 +64,20 @@
     // @media (max-width: 1400px) {
     //     left: 96%;
     // }
+}
+
+.swiper-pagination {
+    position: absolute;
+}
+
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    background: #CAC2BA;
+    border-radius: 50%;
+    font-size: 0;
+}
+
+.swiper-pagination-bullet-active {
+    background: #F16A50;
 }
