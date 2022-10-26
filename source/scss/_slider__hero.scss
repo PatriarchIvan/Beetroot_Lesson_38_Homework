@@ -36,11 +36,12 @@
                 font-size: 18px;
                 text-transform: uppercase;
                 border: 2px solid #F8F1EA;
-                transition: background 0.2s ease;
+                transition: all 0.3s ease;
 
                 &:hover {
                     background: #F16A50;
                     border: transparent;
+                    transform: scale(1.2);
                 }
             }
 
@@ -73,6 +74,7 @@
         li {
             &.slick-active {
                 button {
+                    transform: scale(1.2);
                     background: #F16A50;
                 }
             }

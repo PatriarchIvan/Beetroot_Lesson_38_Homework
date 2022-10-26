@@ -1,5 +1,5 @@
 .slider__shop {
-    max-width: 1200px;
+    max-width: 1280px;
     z-index: 1;
 
     .swiper-wrapper {
@@ -73,12 +73,13 @@
         padding: 15px 60px;
         border: 2px solid #000;
         text-transform: uppercase;
-        transition: all 0.2s ease;
+        transition: all 0.3s ease;
 
         &:hover {
             border: 2px solid transparent;
             background: #F16A50;
             color: #fff;
+            transform:  scale(1.2);
         }
     }
 }
@@ -96,7 +97,7 @@
     
     &:hover {
         background-image: url("../source/img/slider__shop/right__arr.png");
-        transform: rotateY(-180deg);
+        transform: rotateY(-180deg) scale(1.2);
         cursor: pointer;
     }
 
@@ -111,14 +112,14 @@
 
 .swiper-button-next-unique {
     position: absolute;
-    left: 90%;
+    left: 92%;
     transform: rotateY(180deg);
     z-index: 2;
     &:hover {
-        transform: rotateY(0deg);
+        transform: rotateY(0deg) scale(1.2);
     }
 
     @media (max-width: 1400px) {
-        left: 96%;
+        // left: 96%;
     }
 }

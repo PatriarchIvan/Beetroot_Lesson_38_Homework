@@ -1,5 +1,5 @@
 .partners.swiper {
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
     max-height: 100px;
     position: relative;
@@ -39,7 +39,7 @@
 
     &:hover {
         background-image: url("../source/img/slider__shop/right__arr.png");
-        transform: rotateY(-180deg);
+        transform: rotateY(-180deg) scale(1.2);
         cursor: pointer;
     }
 
@@ -54,11 +54,11 @@
 
 .swiper-button-next-unique-part {
     position: absolute;
-    left: 91%;
+    left: 92%;
     transform: rotateY(180deg);
 
     &:hover {
-        transform: rotateY(0deg);
+        transform: rotateY(0deg) scale(1.2);
     }
 
     // @media (max-width: 1400px) {
